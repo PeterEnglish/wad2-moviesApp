@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import HomePage from "./pages/homePage";
 import MovieDetailsPage from "./pages/movieDetailsPage";
-import { BrowserRouter, Route, Redirect, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import FavoriteMoviesPage from "./pages/favoriteMoviesPage"; // NEW
 import MovieReviewPage from "./pages/movieReview";
 import SiteHeader from "./components/siteHeader";
