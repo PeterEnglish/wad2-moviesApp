@@ -5,6 +5,7 @@ import MovieDetailsPage from "./pages/movieDetailsPage";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import FavoriteMoviesPage from "./pages/favoriteMoviesPage"; // NEW
 import MovieReviewPage from "./pages/movieReview";
+import UpcomingMoviesPage from "./pages/upcomingMoviesPage";
 import SiteHeader from "./components/siteHeader";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
     <BrowserRouter>
       <SiteHeader /> {/* New Header  */}
       <Switch>
+        <Route exact path="/movies/upcoming" component={UpcomingMoviesPage} />
         <Route path="/reviews/:id" component={MovieReviewPage} />
         <Route exact path="/movies/favorites" component={FavoriteMoviesPage} />
         <Route path="/movies/:id" component={MovieDetailsPage} />
