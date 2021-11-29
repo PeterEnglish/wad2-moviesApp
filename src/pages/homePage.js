@@ -3,7 +3,7 @@ import PageTemplate from "../components/templateMovieListPage";
 import { getMovies } from "../api/tmdb-api";
 
 const HomePage = (props) => {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState([]); // movies state
   const favorites = movies.filter((m) => m.favorite);
   localStorage.setItem("favorites", JSON.stringify(favorites));
 
